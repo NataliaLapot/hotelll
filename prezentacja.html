@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style/layout.css">
+    <link rel="stylesheet" href="Style/menuPionowe.css">
+    <link rel="stylesheet" href="Style/tabela.css">
+    <link rel="stylesheet" href="Style/formularz.css">
+    <link rel="stylesheet" href="Style/prezentacja.css">
+</head>
+<body>
+    <header>
+        <h1>Hotel <span style="color: gold;">RESET</span><br>
+        <span style="font-size: 30px; text-align: center">Opinie ekspertów</span></h1>
+    </header>
+    <nav>
+        <h2>Menu</h2>
+        <ul>
+            <li> <a href="index.html"> Strona główna </a> </li>
+            <li><a href="tabela.html">Cennik</a></li>
+            <li><a href="formularz.html">Szybka rezerwacja</a></li>
+            <li><a href="Kalkulator.html">Wyceń swój pobyt</a></li>
+            <li><a href="canvas.html">Plakat</a></li>
+            <li><a href="obrazy.html">Nasi uśmiechnięci goście</a></li>
+            <li><a href="mapa.html">Dzisiejsze menu</a></li>
+            <li><a href="prezentacja.html">Opinie ekspertów</a></li>
+            <li><a href="historia.html">Hisotoria Hotelu RESET</a></li>
+            <li><a href="playlista.html">Playlista</a></li>
+            <li><a href="https://www.booking.com/index.pl.html" target="_blank">Znajdź nas na booking!</a></li>
+        </ul>
+    </nav>
+    <article href="style/prezentacja.css">
+        <h1>Poznaj opinie ekspertów o Hotelu <span style="color: gold;">RESET</span></h1>
+        <br/>
+        <div class="slide active-slide">
+            <h2>Katarzyna Dowbor</h2>
+            <img src="Zdjęcia/ekspert1.jpg" alt="Katarzyna Dowbor" />
+            <p>"Chciałam wyremontować Hotel RESET. Okazało się, że nie ma nic do poprawy."</p>
+        </div>
+        <div class="slide">
+            <h2>Małgorzata Rozenek-Majdan</h2>
+            <img src="Zdjęcia/ekspert2.jpg" alt="Gosia" />
+            <p>"Przyszłam do Hotelu RESET w białej rękawiczce. Po moim wyjściu była jeszcze bielsza."</p>
+        </div>
+        <div class="slide">
+            <h2>Zenon Martyniuk</h2>
+            <img src="Zdjęcia/ekspert3.jpg" alt="Zenek" />
+            <p>"Życie to są chwile. Chwile, które warto spędzić w Hotelu RESET."</p>
+        </div>
+        <div class="slide">
+            <h2>Fineasz i Ferb</h2>
+            <img src="Zdjęcia/ekspert4.jpg" alt="Fineasz" />
+            <p>"Podczas pobytu w Hotelu RESET codziennie wiedziałem co będziemy robić Ferb."</p>
+        </div>
+        <div class="slide">
+            <h2>Harry Potter</h2>
+            <img src="Zdjęcia/ekspert5.jpg" alt="Hari" />
+            <p>"Spędziłem w Hotelu RESET pół roku. Nie dopadł mnie żaden dementor. Polecam."</p>
+        </div>
+        <div class="slide">
+            <h2>Ludzik z delmy</h2>
+            <img src="Zdjęcia/ekspert6.jpg" alt="delmik" />
+            <p>"Praca w delmie i elektrowni jądrowej potrafi być męcząca. Lubię się zRESETować"</p>
+        </div>
+        <div class="nav-buttons">
+            <button onclick="previousSlide()">Poprzedni</button>
+            <button onclick="nextSlide()">Następny</button>
+        </div>
+    </article>
+    <script src="js/prezentacja.js"></script>
+    <aside>
+        <h2>Nie trzeba wyrzucać zegara przez okno</h2>
+        <iframe src="kontrolki.html" frameborder="0"></iframe>
+    </aside>
+    <footer>
+        <div class="luxury-text">Hotel <span style="color: gold;">RESET </span><br>
+        Gdzie Relaks Spotyka Luksus <hr></div>
+        <div class="smaller-text">Projekt strony internetowej wykonany w ramach 
+        zaliczenia przedmiotu MO: TIiSKwE na kierunku Energetyka. <br>
+        Wykonany przez Natalię Łapot <br>
+        nr albumu: 157 567 <br>
+        ul.Piotrowo <br> 561-138 Poznań <br>
+        tel. 123 234 345</div>
+    </footer>
+</body>
+</html>

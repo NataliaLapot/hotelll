@@ -1,0 +1,22 @@
+article{
+    color:white;
+    text-align: center;
+}
+table {
+    width: 100%;
+    border: 6px double gold;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: center;
+    color:white;
+}
+th, td {
+    padding: 12px;
+    border: 6px double gold;
+}
+th {
+    background-color: navy;
+}
+.premium {
+    background-color: rgba(255, 217, 0, 0.564);
+}

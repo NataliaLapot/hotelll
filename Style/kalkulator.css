@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 40px;
+    border: 3px double gold;
+    border-radius: 10px;
+    box-shadow: 0 0 30px gold;
+}
+label {
+    display: block;
+    margin: 10px 0 5px;
+    width: 150px;
+}
+input[type="number"], input[type="checkbox"] {
+    margin-bottom: 15px;
+    width: 100%;
+}
+input[type="button"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: gold;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+input[type="button"]:hover {
+    background-color: gold;
+}
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+#chartContainer {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    margin: 20px auto;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+#myChart {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+}

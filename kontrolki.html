@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="Style/layout.css">
+    <link rel="stylesheet" href="Style/menuPionowe.css">
+    <link rel="stylesheet" href="Style/tabela.css">
+    <link rel="stylesheet" href="Style/formularz.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .javaScript {
+            color: white;
+            text-align: center;
+            border: 4px double #D4AF37;
+            padding: 20px;
+            max-width: 100%;
+            margin: auto;
+        }
+        .javaScript label, .javaScript input {
+            border: 4px double #D4AF37;
+            display: block;
+            margin: 10px 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .javaScript input {
+            padding: 5px;
+        } 
+    </style>
+
+    <script>
+        function startclock() {
+            setInterval(() => {
+                const now = new Date();
+                document.getElementById('clock').value = now.toLocaleTimeString();
+                document.getElementById('date').value = now.toLocaleDateString();
+            }, 1000);
+        }
+
+        function starttimer() {
+            let visitCount = localStorage.getItem('visitCount') || 0;
+            visitCount++;
+            sessionStorage.setItem('visitCount', visitCount);
+            document.getElementById('visitCount').value = visitCount;
+
+            let sessionStartTime = localStorage.getItem('sessionStartTime') || Date.now();
+            localStorage.setItem('sessionStartTime', sessionStartTime);
+
+            setInterval(() => {
+                const elapsedTime = ((Date.now() - sessionStartTime) / 1000).toFixed(2);
+                document.getElementById('myTimer').value = elapsedTime;
+            }, 100);
+        }
+
+        window.onload = function () {
+            startclock();
+            starttimer();
+        };
+    </script>
+</head>
+<body style="color: white; text-align: center;">
+    <section class="javaScript" id="java1">
+        <h2 style="text-align:center">Aby czas dalej leciał...</h2>
+        <label>Zegar:</label>
+        <input type="text" id="clock" value="00:00:00" readonly/><br/>
+        <label>Data:</label>
+        <input type="text" id="date" value="YYYY-MM-DD" readonly/><br/>
+        <label>Licznik odwiedzin:</label>
+        <input type="text" id="visitCount" value="0" readonly/><br/>
+        <label>Czas spędzony na stronie:</label>
+        <input type="text" id="myTimer" value="0.00" readonly/><br/>
+    </section>
+</body>
+</html>

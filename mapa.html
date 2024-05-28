@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style/layout.css">
+    <link rel="stylesheet" href="Style/menuPionowe.css">
+</head>
+<body>
+    <header>
+        <h1>Hotel <span style="color: gold;">RESET</span><br>
+            <span style="font-size: 30px; text-align: center">Menu dzienne</span></h1>
+    </header>
+    <style>
+        .info-box {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 4px double gold;
+            background-color: navy;
+            display: none;
+        }
+        .menu-image {
+            max-width: 100%;
+            height: 80%;
+        }
+    </style>
+    <nav>
+        <h2>Menu</h2>
+        <ul>
+            <li> <a href="index.html"> Strona główna </a> </li>
+            <li><a href="tabela.html">Cennik</a></li>
+            <li><a href="formularz.html">Szybka rezerwacja</a></li>
+            <li><a href="Kalkulator.html">Wyceń swój pobyt</a></li>
+            <li><a href="canvas.html">Plakat</a></li>
+            <li><a href="obrazy.html">Nasi uśmiechnięci goście</a></li>
+            <li><a href="mapa.html">Dzisiejsze menu</a></li>
+            <li><a href="prezentacja.html">Opinie ekspertów</a></li>
+            <li><a href="historia.html">Hisotoria Hotelu RESET</a></li>
+            <li><a href="playlista.html">Playlista</a></li>
+            <li><a href="https://www.booking.com/index.pl.html" target="_blank">Znajdź nas na booking!</a></li>
+        </ul>
+    </nav>
+    <article style="text-align: center;">
+        <h2>Menu Restauracji</h2>
+        <div id="info-box" class="info-box"></div>
+        <img src="zdjęcia/menu.jpg" usemap="#menu-map" alt="Menu Restauracji" class="menu-image">
+        <map name="menu-map">
+            <area shape="rect" coords="50,40,450,100" href="#" alt="Danie 2" onclick="showInfo(event, 'Hotel RESET codzinnie oferuje nowe, pyszne dania.')">
+            <area shape="rect" coords="140,110,300,150" href="#" alt="Danie 3" onclick="showInfo(event, 'Menu restauracji Hotelu RESET na dzień dzisiejszy')">
+            <area shape="rect" coords="50,200,410,220" href="#" alt="Danie 4" onclick="showInfo(event, 'Idealne dla dzieci. Alergeny: mleko, gluten.')">
+            <area shape="rect" coords="70,230,390,250" href="#" alt="Danie 5" onclick="showInfo(event, 'Danie niskokaloryczne. Alergeny: jaja.')"> 
+            <area shape="rect" coords="80,290,360,315" href="#" alt="Danie 5" onclick="showInfo(event, 'Kurczak z wolnego wybiegu, szczęśliwy za życia. Alergeny: orzechy.')">
+            <area shape="rect" coords="60,320,330,345" href="#" alt="Danie 5" onclick="showInfo(event, 'Rosołek - idealny na każdy dzień. Alergeny: seler.')">
+        </map>
+
+    </article>
+    <script src="js/menu.js"></script>
+    <aside>
+        <h2>Nie trzeba wyrzucać zegara przez okno</h2>
+        <iframe src="kontrolki.html" frameborder="0"></iframe>
+    </aside>
+    <footer>
+        <div class="luxury-text">Hotel <span style="color: gold;">RESET </span><br>
+        Gdzie Relaks Spotyka Luksus <hr></div>
+        <div class="smaller-text">Projekt strony internetowej wykonany w ramach 
+        zaliczenia przedmiotu MO: TIiSKwE na kierunku Energetyka. <br>
+        Wykonany przez Natalię Łapot <br>
+        nr albumu: 157 567 <br>
+        ul.Piotrowo <br> 561-138 Poznań <br>
+        tel. 123 234 345</div>
+    </footer>
+</body>
+</html>

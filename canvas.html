@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/layout.css">
+    <link rel="stylesheet" href="Style/menuPionowe.css">
+    <link rel="stylesheet" href="Style/tabela.css">
+    <link rel="stylesheet" href="Style/formularz.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        h2{
+            background-color: rgb(83, 41, 28);
+            color: blanchedalmond;
+        }
+        .nazwaKlasy{
+            background-color: black;
+            color: wheat;
+        }
+
+        canvas{
+            background-color: white;
+            border: 4px double gold;
+        }
+        input{font-size: 20px;}
+        input:focus{background-color: gold;}
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Hotel <span style="color: gold;">RESET</span><br>
+            <span style="font-size: 30px; text-align: center">Narysuj plakat</span></h1>
+    </header>
+    <nav>
+        <h2>Menu</h2>
+        <ul>
+            <li> <a href="index.html"> Strona główna </a> </li>
+            <li><a href="tabela.html">Cennik</a></li>
+            <li><a href="formularz.html">Szybka rezerwacja</a></li>
+            <li><a href="Kalkulator.html">Wyceń swój pobyt</a></li>
+            <li><a href="canvas.html">Plakat</a></li>
+            <li><a href="obrazy.html">Nasi uśmiechnięci goście</a></li>
+            <li><a href="mapa.html">Dzisiejsze menu</a></li>
+            <li><a href="prezentacja.html">Opinie ekspertów</a></li>
+            <li><a href="historia.html">Hisotoria Hotelu RESET</a></li>
+            <li><a href="playlista.html">Playlista</a></li>
+            <li><a href="https://www.booking.com/index.pl.html" target="_blank">Znajdź nas na booking!</a></li>
+        </ul>
+    </nav>
+    <article>
+        <input type="button" value="Rysuj tło" onclick="rysujTlo()">
+        <input type="button" value="Rysuj Hotel" onclick="rysujHotel()">
+        <input type="button" value="Rysuj gwiazdy" onclick="rysujGwiazdy()">
+        <input type="button" value="Rysuj napis" onclick="rysujNapis()">
+        <input type="button" value="Czyść" onclick="czysc()">
+        
+        <canvas width="500" height="300"></canvas>
+    </article>
+    <script src="js/canvas.js"></script>
+    <aside>
+        <h2>Nie trzeba wyrzucać zegara przez okno</h2>
+        <iframe src="kontrolki.html" frameborder="0"></iframe>
+    </aside>
+    <footer>
+        autor: Natalia Łapot <hr>
+        Politechnika Poznańska <br>
+        ul.Piotrowo <br> 561-138 Poznań <br>
+        tel. 123 234 345
+    </footer>
+</body>
+</html>
